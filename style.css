@@ -1,0 +1,100 @@
+canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: crosshair;
+  }
+  #extraInfoContainer {
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+  }
+  #infoContent {
+    margin-top: 200px;
+  }
+  
+  #background {
+    background-color: green;
+    z-index: 1;
+  }
+  #enviroment {
+    z-index: 2;
+  }
+  
+  #startMenu {
+    position: absolute;
+    top: 170px;
+    width: 300px;
+    left: 100px;
+    z-index: 3;
+    text-align: center;
+    background-color: rgba(203, 208, 216, 0.5);
+    border-radius: 20px;
+  }
+  
+  #start, select {
+    cursor: pointer;
+  }
+  
+  .unselectable {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#joystick {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #0056b3;
+}

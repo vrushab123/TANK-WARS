@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANK WARS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery -->
+</head>
+
+<body>
+    <div id="game">
+        <div id="joystick"></div>
+        <div class="controls">
+            <button id="left">Left</button>
+            <button id="right">Right</button>
+            <button id="jump">Jump</button>
+        </div>
+    </div>
+    <div id="gameContainer">
+        <canvas id="background"></canvas>
+        <canvas id="enviroment" onclick="addBulletAI(0)"></canvas>
+        <div id="extraInfoContainer">
+            <div id="infoContent" class="unselectable">
+                Current kill count: <div id="killCount">0</div><br>
+                Kills until health boost: <div id="healthBoost">10</div><br>
+                Local high score: <div id="highscore">0</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="startMenu">
+        Select difficulty: <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+        </select><br> ~Use WASD to move, and the mouse to fire<br>~ The longer that you don't fire, the stronger the
+        bullet becomes. You can rapid fire, but the damage output will be smaller in comparison.<br>~ When you shoot
+        another bullet, the bullet will
+        either be destroyed or lose some damage.<br>~ The bigger a bullet, the more damage it does.<br>
+        <button id="start" onclick="startGame()">Start game</button>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.8.1/nipplejs.min.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
